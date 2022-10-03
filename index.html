@@ -9,83 +9,83 @@
     </style>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-        href="https://fo 00;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
+            href="https://fo 00;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+            rel="stylesheet">
 </head>
 <body>
-    <div class="heading">
-        <div class="intro">
-            <div class="logo">
-                <p>КАЛЬКУЛЯТОР</p>
-                <P class="logo_2">ОНЛАЙН</P>
-            </div>
-        </div>
-        <div class="instruct">
-            <a>
-                Как пользоваться?
-            </a>
+<div class="heading">
+    <div class="intro">
+        <div class="logo">
+            <p>КАЛЬКУЛЯТОР</p>
+            <P class="logo_2">ОНЛАЙН</P>
         </div>
     </div>
-    <div class="main">
-        <div class="calc">
-                <div class="button input"> <form name="form"><input type="text" name="textview" readonly> </form>
-                </div>
-            <div class="button clean"onclick="clean()">С</div>
-            <div class="button back" onclick="back()">&lAarr;</div>
-            <div class="button" onclick="insert('+')">+</div>
-            <div class="button"onclick="insert('-')">-</div>
-            <div class="button"onclick="insert('*')">&times;</div>
-            <div class="button"onclick="insert('/')">&divide;</div>
-            <div class="button"onclick="insert('7')">7</div>
-            <div class="button"onclick="insert('8')">8</div>
-            <div class="button"onclick="insert('9')">9</div>
-            <div class="button"onclick="insert('(')">(</div>
-            <div class="button"onclick="insert('4')">4</div>
-            <div class="button"onclick="insert('5')">5</div>
-            <div class="button"onclick="insert('6')">6</div>
-            <div class="button"onclick="insert(')')">)</div>
-            <div class="button"onclick="insert('1')">1</div>
-            <div class="button"onclick="insert('2')">2</div>
-            <div class="button"onclick="insert('3')">3</div>
-            <div class="button equal"onclick="eq()">=</div>
-            <div class="button zero"onclick="insert('0')">0</div>
-            <div class="button"onclick="insert('.')">.</div>
-        </div>
+    <div class="instruct">
+        <a href="https://casio-calcs.ru/wp-content/uploads/2018/01/fx-CG50.pdf">
+            Как пользоваться?
+        </a>
     </div>
-    <script>
+</div>
+<div class="main">
+    <div class="calc">
+        <div class="button input"> <form name="form"><input type="text" name="textview" readonly> </form>
+        </div>
+        <div class="button clean"onclick="clean()">С</div>
+        <div class="button back" onclick="back()">&lAarr;</div>
+        <div class="button" onclick="insert('+')">+</div>
+        <div class="button"onclick="insert('-')">-</div>
+        <div class="button"onclick="insert('*')">&times;</div>
+        <div class="button"onclick="insert('/')">&divide;</div>
+        <div class="button"onclick="insert('7')">7</div>
+        <div class="button"onclick="insert('8')">8</div>
+        <div class="button"onclick="insert('9')">9</div>
+        <div class="button"onclick="insert('(')">(</div>
+        <div class="button"onclick="insert('4')">4</div>
+        <div class="button"onclick="insert('5')">5</div>
+        <div class="button"onclick="insert('6')">6</div>
+        <div class="button"onclick="insert(')')">)</div>
+        <div class="button"onclick="insert('1')">1</div>
+        <div class="button"onclick="insert('2')">2</div>
+        <div class="button"onclick="insert('3')">3</div>
+        <div class="button equal"onclick="eq()">=</div>
+        <div class="button zero"onclick="insert('0')">0</div>
+        <div class="button"onclick="insert('.')">.</div>
+    </div>
+</div>
+<script>
 
-        function insert(num){
-            
-            document.form.textview.value =
+    function insert(num){
+
+        document.form.textview.value =
             document.form.textview.value + num;
 
-        }
-        function clean (){
+    }
+    function clean (){
 
-            document.form.textview.value = "";
-        }
+        document.form.textview.value = "";
+    }
 
-        function back (){
-            var exp =  document.form.textview.value;
-            document.form.textview.value = exp.substring(0, exp.length -1);
+    function back (){
+        var exp =  document.form.textview.value;
+        document.form.textview.value = exp.substring(0, exp.length -1);
+    }
+    function eq (){
+        var exp = document.form.textview.value;
+        if(exp){
+            document.form.textview.value = eval(exp);
         }
-        function eq (){
-            var exp = document.form.textview.value;
-            if(exp){
-                document.form.textview.value = eval(exp);
-            }
-        }
-        
-    </script>
-    <div class="podval">
-        <div class="s">
-            <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quos odio fuga suscipit ipsum
-                accusantium numquam fugit rerum deserunt, eveniet incidunt doloribus, corporis quidem? Ratione obcaecati
-                at nisi ipsum repellendus totam, quaerat perspiciatis molestiae dicta quae recusandae soluta molestias
-                sequi!
-            </p>
-        </div>
+    }
+
+</script>
+<div class="podval">
+    <div class="s">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi quos odio fuga suscipit ipsum
+            accusantium numquam fugit rerum deserunt, eveniet incidunt doloribus, corporis quidem? Ratione obcaecati
+            at nisi ipsum repellendus totam, quaerat perspiciatis molestiae dicta quae recusandae soluta molestias
+            sequi!
+        </p>
     </div>
+</div>
 </body>
 </html>
